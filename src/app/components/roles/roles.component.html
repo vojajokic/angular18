@@ -1,46 +1,15 @@
-<!-- <p>roles works!</p>
-
 <div class="row">
-    <div class="col-3">
-        <p>{{firstName}}</p>
+    <div class="col-4">
+        <ul>
+            <li *ngFor="let item of roleList"> {{item.categoryName}}</li>
+        </ul>
     </div>
-    <div class="col-3">
-        <p>{{version}}</p>
+    <div class="col-4">
+        <select name="" id="">
+            <option *ngFor="let role of roleList" [value]="role.insuranceCategoryId">{{role.categoryName}}</option>
+        </select>
     </div>
-    <div class="col-3">
-        {{currentDate}}
+    <div class="col-4">
+        <button class="btn btn-warning mx-2" *ngFor="let item of roleList">{{item.categoryName}}</button>
     </div>
-    <div class="col-3">
-        {{selectedState}}
-    </div>
-
-    <div class="row">
-        <div class="col-3">
-            <input type="text" [value]="firstName" class="form-control">
-        </div>
-        <div class="col-3">
-            <input type="text" [(ngModel)]="firstName">
-        </div>
-        <div class="col-3">
-            <input [type]="inputType"/>
-        </div>
-        <div class="col-3">
-            <select [(ngModel)]="selectedState">
-                <option value="MH">MH</option>
-                <option value="MP">MP</option>
-                <option value="Goa">Goa</option>
-            </select>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3">
-            <button class="btn btn-success" (click)="showWelcomeAlert()">Show alert</button>
-        </div>
-        <div class="col-3">
-            <button class="btn btn-success" (click)="showMessage('Welcome React')">Show React Msg</button>
-        </div>
-        <div class="col-3">
-            <button class="btn btn-success" (click)="showMessage('Welcome Dot Net')">Show Dot Net Msg</button>
-        </div>
-    </div>
-</div> -->
+</div>

@@ -1,4 +1,4 @@
 export interface IRole {
-    roleID: number,
-    role: string
+    insuranceCategoryId: number,
+    categoryName: string
 }
