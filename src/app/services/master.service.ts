@@ -11,6 +11,6 @@ export class MasterService {
   constructor(private http: HttpClient) { }
 
   getDesignation(): Observable<APIResponseModel> {
-    return this.http.get<APIResponseModel>("https://freeapi.miniprojectideas.com/api/EmployeeApp/GetAllDesignation")
+    return this.http.get<APIResponseModel>("https://projectapi.gerasim.in/api/PropertyBookingController/GetAllPropertyType")
   }
 }

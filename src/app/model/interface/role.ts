@@ -4,8 +4,8 @@ export interface IRole {
 }
 
 export interface IDesignation {
-    designationId: number,
-    designation: string
+    propertTypeId: number,
+    propertyType: string
 }
 
 export interface APIResponseModel {
